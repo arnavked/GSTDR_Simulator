@@ -1,0 +1,54 @@
+{
+  "generator_version": "bucket3-v1.1",
+  "seed": 0,
+  "n_samples": 50000,
+  "split": {
+    "train": 40000,
+    "val": 5000,
+    "test": 5000
+  },
+  "sample_rate_hz": 1000000000.0,
+  "excitation": {
+    "source": "real_waveform",
+    "source_file": "25MHz1V (1).txt",
+    "n_samples": 1168,
+    "sha256_first16": "3253c389563c04b5"
+  },
+  "cable_params": {
+    "v_p": 165000000.0,
+    "alpha0": 0.0,
+    "alpha1": 2.4e-06
+  },
+  "valid_range": {
+    "dead_zone_max_m": 13.2,
+    "safe_max_m": 83.16,
+    "footprint_samples": 160,
+    "min_fault_separation_m": 13.2
+  },
+  "sampling_weights": {
+    "fault_count": {
+      "0": 0.1,
+      "1": 0.4,
+      "2": 0.3,
+      "3": 0.15,
+      "4": 0.05
+    },
+    "gamma_category": {
+      "open": 0.2,
+      "short": 0.2,
+      "soft": 0.55,
+      "healthy_like": 0.05
+    },
+    "location_regime": {
+      "dead_zone": 0.1,
+      "beyond_range": 0.07,
+      "valid": 0.83
+    },
+    "separation_regime": {
+      "below_resolution": 0.2,
+      "near_resolution": 0.3,
+      "above_resolution": 0.5
+    },
+    "end_truncation_prob": 0.25
+  }
+}
