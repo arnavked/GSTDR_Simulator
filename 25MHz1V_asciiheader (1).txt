@@ -1,0 +1,23 @@
+NumAChannels = 1
+NumDChannels = 0
+NumFFTChannels = 0
+LenH = 0
+LenL = 1168
+PostH = 0
+PostL = 584
+TrigDelayH = 0
+TrigDelayL = 0
+Samplerate = 1000000000
+Resolution = 16
+MaxADCValue = 32768
+Max = 1000
+Min = -1000
+Coding = 0
+ASCIISetup = 16844802
+ASCIILineSkip = 1
+ASCIIColumnSkip = 0
+ASCIIFFTUnit = 5
+Flags = 0
+
+[AChannel0]
+Name = AI-Ch-0
